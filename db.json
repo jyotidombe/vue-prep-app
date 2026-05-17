@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@test.com",
+      "password": 123456,
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "manager@test.com",
+      "password": 123456,
+      "role": "manager"
+    },
+    {
+      "id": "3",
+      "email": "user@test.com",
+      "password": 123456,
+      "role": "user"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "2",
+      "title": "Task 2",
+      "description": "Second task",
+      "assignedTo": "manager@test.com"
+    },
+    {
+      "id": "3",
+      "description": "",
+      "assignedTo": "",
+      "title": "task 4"
+    },
+    {
+      "title": "Task 33",
+      "description": "Third Task",
+      "assignedTo": "admin@test.com",
+      "id": "333f"
+    }
+  ]
+}
