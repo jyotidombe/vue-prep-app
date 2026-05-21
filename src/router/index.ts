@@ -13,7 +13,7 @@ const router = createRouter({
         { path: '/dashboard', component: dashboard, meta: { requiresAuth: true } },
         { path: '/admin', component: adminView, meta: { requiresAuth: true, role:['admin']} },
         { path: '/manager', component: ManagerView, meta: { requiresAuth: true, role:['manager','admin']} },
-        { path: '/tasks', component: () => import('../views/taskPage.vue'), meta: { requiresAuth: true } }
+        { path: '/tasks', component: () => import('../views/taskView.vue'), meta: { requiresAuth: true } }
     ]
 });
 

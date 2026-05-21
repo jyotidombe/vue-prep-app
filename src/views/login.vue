@@ -33,11 +33,68 @@ const handleLogin = async () => {
 
 </script>
 <template>
-    <div class="login-container">
-        <h2>Login</h2>
-        <input v-model="email" placeholder="Email" />
-        <input v-model="password" type="password" placeholder="Password" />
-        <button @click="handleLogin">Login</button>
-        <p v-if="error">{{ error }}</p>
+  <main class="container min-vh-100 d-flex align-items-center justify-content-center">
+    
+    <div class="card shadow-lg p-4 border-0 rounded-4 login-card">
+      
+      <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary">Welcome Back</h2>
+        <p class="text-muted mb-0">
+          Login to continue
+        </p>
+      </div>
+
+      <form @submit.prevent="handleLogin">
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">
+            Email
+          </label>
+
+          <input
+            v-model="email"
+            type="email"
+            class="form-control form-control-lg"
+            placeholder="Enter email"
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">
+            Password
+          </label>
+
+          <input
+            v-model="password"
+            type="password"
+            class="form-control form-control-lg"
+            placeholder="Enter password"
+          />
+        </div>
+
+        <!-- Error -->
+        <div
+          v-if="error"
+          class="alert alert-danger"
+        >
+          {{ error }}
+        </div>
+
+        <!-- Button -->
+        <div class="d-grid mt-4">
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg"
+          >
+            Login
+          </button>
+        </div>
+
+      </form>
+
     </div>
+
+  </main>
 </template>

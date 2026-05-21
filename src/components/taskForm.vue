@@ -59,8 +59,7 @@ const handleSubmit = () => {
     <input v-model="form.title" placeholder="Title" />
     <input v-model="form.description" placeholder="Description" />
     <input v-model="form.assignedTo" placeholder="Assign To" />
-
-    <button @click="handleSubmit">
+    <button  class="btn btn-primary" @click="handleSubmit">
       {{ props.task ? 'Update' : 'Create' }}
     </button>
   </div>
