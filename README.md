@@ -5,7 +5,8 @@ This template should help get you started developing with Vue 3 and TypeScript i
 Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
 
 
-//Run npx json-server --watch db.json --port 3000 This creates a fake REST API:s
+//Creates a fake REST API & start the DB connection use below commands.:
+//npx json-server --watch db.json --port 5000
 
 //Login => useAuthStore(auth.ts) => authService.ts => axiosApi
 
