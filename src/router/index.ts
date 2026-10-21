@@ -28,7 +28,7 @@ function getDefaultRoute(role: string) {
     }
 }
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
     const auth = useAuthStore();
     if(to.meta.requiresAuth && !auth.user){
         return next('/login');
